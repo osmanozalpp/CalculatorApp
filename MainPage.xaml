@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage"
+             Title="OsmanCalculator"
+             BackgroundColor="#1e1e1e">
+
+    <Grid RowDefinitions="Auto, *, *, *, *, *, *, *" ColumnDefinitions="*, *, *, *" Padding="10">
+        <Label x:Name="ResultLabel" Text="0" Grid.Row="0" Grid.ColumnSpan="4"
+               HorizontalTextAlignment="End" VerticalOptions="CenterAndExpand"
+               TextColor="White" FontSize="48" FontAttributes="Bold"/>
+
+        
+        <Button Text="AC" Grid.Row="1" Grid.Column="0" Clicked="Clear_Clicked" BackgroundColor="#a6a6a6" TextColor="Black"/>
+        <Button Text="%" Grid.Row="1" Grid.Column="1" Clicked="Percent_Clicked" BackgroundColor="#a6a6a6" TextColor="Black"/>
+        <Button Text="±" Grid.Row="1" Grid.Column="2" Clicked="PosNeg_Clicked" BackgroundColor="#a6a6a6" TextColor="Black"/>
+        <Button Text="÷" Grid.Row="1" Grid.Column="3" Clicked="Operator_Clicked" BackgroundColor="#f39c12" TextColor="White"/>
+
+        <Button Text="7" Grid.Row="2" Grid.Column="0" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="8" Grid.Row="2" Grid.Column="1" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="9" Grid.Row="2" Grid.Column="2" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="×" Grid.Row="2" Grid.Column="3" Clicked="Operator_Clicked" BackgroundColor="#f39c12" TextColor="White"/>
+
+     
+        <Button Text="4" Grid.Row="3" Grid.Column="0" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="5" Grid.Row="3" Grid.Column="1" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="6" Grid.Row="3" Grid.Column="2" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="−" Grid.Row="3" Grid.Column="3" Clicked="Operator_Clicked" BackgroundColor="#f39c12" TextColor="White"/>
+
+        <Button Text="1" Grid.Row="4" Grid.Column="0" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="2" Grid.Row="4" Grid.Column="1" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="3" Grid.Row="4" Grid.Column="2" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="+" Grid.Row="4" Grid.Column="3" Clicked="Operator_Clicked" BackgroundColor="#f39c12" TextColor="White"/>
+
+       
+        <Button Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Clicked="Number_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="." Grid.Row="5" Grid.Column="2" Clicked="Decimal_Clicked" BackgroundColor="#333333" TextColor="White"/>
+        <Button Text="=" Grid.Row="5" Grid.Column="3" Clicked="Equals_Clicked" BackgroundColor="#f39c12" TextColor="White"/>
+    </Grid>
+</ContentPage>
